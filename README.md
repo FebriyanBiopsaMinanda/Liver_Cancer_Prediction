@@ -73,11 +73,23 @@ Dataset diperoleh dari Kaggle:
 
 ---
 
-## 📊 Hasil
-- **Random Forest** → Akurasi tertinggi, performa stabil pada data tidak seimbang  
-- **SVM** → Baik pada data terstandarisasi, namun lebih lambat  
-- **KNN** → Sensitif terhadap scaling data  
-- **Naive Bayes** → Cepat, tapi akurasi lebih rendah  
-- **Decision Tree** → Interpretasi mudah, cenderung overfitting  
+## 🏆 Hasil
 
-👉 Secara umum, **Random Forest** menjadi model paling optimal untuk dataset ini.
+| Model                       | Accuracy  | Precision | Recall  | F1-Score |
+|------------------------------|----------|-----------|---------|----------|
+| 🌳 Random Forest             | **98.66%** | **0.99** | **0.99** | **0.99** |
+| 🧩 Support Vector Machine    | 88.37%   | 0.88      | 0.88    | 0.88     |
+| 👥 K-Nearest Neighbors (KNN) | 89.20%   | 0.89      | 0.89    | 0.89     |
+| 📐 Naive Bayes               | 83.39%   | 0.83      | 0.83    | 0.83     |
+| 🌲 Decision Tree             | 96.10%   | 0.96      | 0.96    | 0.96     |
+
+---
+
+## 📌 Kesimpulan
+Berdasarkan hasil evaluasi:  
+- 🌳 **Random Forest** memberikan performa **terbaik** dengan akurasi hampir 99% dan skor metrik yang sangat tinggi.  
+- 🌲 **Decision Tree** juga cukup baik, namun lebih rentan terhadap overfitting.  
+- 🧩 **SVM** dan 👥 **KNN** memiliki performa menengah dengan akurasi ~88–89%.  
+- 📐 **Naive Bayes** menjadi model tercepat, tetapi memiliki akurasi paling rendah.
+
+Secara keseluruhan, **Random Forest** adalah model paling optimal untuk prediksi kanker hati pada dataset ini, karena mampu menangkap pola kompleks antar fitur dengan baik.
